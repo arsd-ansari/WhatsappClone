@@ -12,33 +12,33 @@ class ChatPage extends StatefulWidget {
 class _ChatPageState extends State<ChatPage> {
   List<ChatModel> chats = [
     ChatModel(
-        name: "Samay Raina",
+        name: "Arshad Ansari",
         isGroup: false,
-        currentMessage: "Ghoda is not a respectible animal",
+        currentMessage: "Hi There",
         time: "4:00",
         icon: "assets/person.svg"),
     ChatModel(
-        name: "Sagar Shah",
+        name: "Akram",
         isGroup: false,
-        currentMessage: "Alpha 0",
+        currentMessage: "Hi man",
         time: "10:00",
         icon: "assets/person.svg"),
     ChatModel(
-        name: "General Chat",
+        name: "MECH",
         isGroup: true,
-        currentMessage: "Sab k sab bhadve hai",
+        currentMessage: "Hi Everyone",
         time: "4:00",
         icon: "assets/groups.svg"),
     ChatModel(
-        name: "Amruta",
+        name: "Lucky",
         isGroup: false,
-        currentMessage: "Sagar tu samay k saath mt ja",
+        currentMessage: "Can you do this?",
         time: "11:00",
         icon: "assets/person.svg"),
     ChatModel(
-        name: "GamerFleet",
+        name: "Arvind",
         isGroup: false,
-        currentMessage: "Arrey Yaar",
+        currentMessage: "Ohh man",
         time: "12:00",
         icon: "assets/person.svg"),
   ];

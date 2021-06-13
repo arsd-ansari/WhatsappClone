@@ -1,4 +1,5 @@
 import 'package:chatapp/Model/ChatModel.dart';
+import 'package:chatapp/Screens/IndividualPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -9,7 +10,14 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (contex) => IndividualPage(
+                      chatModel: chatModel,
+                    )));
+      },
       child: Column(
         children: [
           ListTile(
@@ -41,7 +49,7 @@ class CustomCard extends StatelessWidget {
                 )
               ],
             ),
-            trailing: Text("12:00"),
+            trailing: Text(chatModel.time),
           ),
           Padding(
             padding: const EdgeInsets.only(right: 20, left: 80),
