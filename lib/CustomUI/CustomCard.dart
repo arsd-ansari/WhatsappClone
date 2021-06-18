@@ -23,7 +23,7 @@ class CustomCard extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               child: SvgPicture.asset(
-                chatModel.icon,
+                chatModel.icon!,
                 color: Colors.white,
                 height: 37,
                 width: 37,
@@ -32,7 +32,7 @@ class CustomCard extends StatelessWidget {
               backgroundColor: Colors.blueGrey,
             ),
             title: Text(
-              chatModel.name,
+              chatModel.name!,
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             subtitle: Row(
@@ -42,14 +42,14 @@ class CustomCard extends StatelessWidget {
                   width: 3,
                 ),
                 Text(
-                  chatModel.currentMessage,
+                  chatModel.currentMessage!,
                   style: TextStyle(
                     fontSize: 13,
                   ),
                 )
               ],
             ),
-            trailing: Text(chatModel.time),
+            trailing: Text(chatModel.time!),
           ),
           Padding(
             padding: const EdgeInsets.only(right: 20, left: 80),
