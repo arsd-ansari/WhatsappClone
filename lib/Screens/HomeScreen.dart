@@ -1,4 +1,6 @@
+import 'package:chatapp/pages/CameraPage.dart';
 import 'package:chatapp/pages/ChatPage.dart';
+import 'package:chatapp/pages/StatusPage.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -65,9 +67,9 @@ class _HomeScreenState extends State<HomeScreen>
         ),
       ),
       body: TabBarView(controller: _controller, children: [
-        Text('camera'),
+        CameraPage(),
         ChatPage(),
-        Text('Status'),
+        StatusPage(),
         Text('Calls'),
       ]),
     );
